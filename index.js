@@ -55,7 +55,7 @@ app.use((req, res, next) => {
 
 
 app.listen(5000, () => {
-	console.log("Backend server is running, ahojkyyy!");
+	console.log("Backend server is running!");
 
 
 });
