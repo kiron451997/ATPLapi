@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Image = require("../models/Image");
+const Image = require("../models/image.js");
 const { verifyToken, verifyTokenAndAuthorisation, verifyTokenAndAdmin } = require("./verifyToken");
 
 
