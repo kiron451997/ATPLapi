@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Subjects = require("../models/Subjects");
+const Subjects = require("../models/subjects.js");
 const { verifyToken, verifyTokenAndAuthorisation, verifyTokenAndAdmin } = require("./verifyToken");
 
 
