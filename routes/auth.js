@@ -29,7 +29,7 @@ router.post("/login", async (req,res)=>{
 
 	try {
 		const user = await User.findOne ({ username: req.body.username });
-		!user && res.sendStatus(401).json({ message: 'User does not exist!'});
+		!user && res.sendStatus(401).json({ message: 'User does not exist'});
 
 		const hashedPassword = CryptoJS.AES.decrypt( user.password, process.env.PASS_SEC );
 		const OriginalPassword = hashedPassword.toString(CryptoJS.enc.Utf8);
