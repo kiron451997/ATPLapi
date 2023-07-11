@@ -31,7 +31,7 @@ console.log(username);
 
 
 // Delete USER BY ID
-router.delete("/:id", verifyTokenAndAuthorisation, async (req, res )=> {
+router.delete("/:id", /* verifyTokenAndAuthorisation */, async (req, res )=> {
 	try {
 		await User.findByIdAndDelete(req.params.id);
 		res.status(200).json("User has been deleted ... ");
